@@ -194,21 +194,13 @@ body{
 
 /* features */
 .col-img {
-    background-image: url(../img/servicio-tecnico.jpg);
+    background-image: url(../img/personas-instalando.jpg);
     background-position: 10%;
     background-size: cover;
     min-height: 100px;
 }
 
 
-
-.img-carou{
-    width: 100px!important;
-}
-.carousel{
-    max-width: 50%;
-    justify-content: space-between;
-}
 
 /* Services */
 
@@ -218,7 +210,6 @@ body{
     padding: 25px;
     transition: all 0.35s ease;
 }
-
 .card-effect:hover {
     box-shadow: none;
     transform: translateY(5px);
