@@ -7,6 +7,10 @@
     <title>DIC Tecnology Solutions</title>
     <!-- link de icon -->
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
@@ -17,29 +21,29 @@
     />
   </head>
 
-  <!-- HERO -->
+  <!-- Navbar-->
   <body>
-    <header class="hero">
+    <header>
       <nav class="nav container">
         <div class="nav-logo">
-          <h2 class="nav-title">DIC</h2>
+          <a href="./index.html" class="nav-title">DIC</a>
         </div>
 
         <ul class="nav-link nav-link--menu">
           <li class="nav-items">
-            <a href="#" class="nav-links">Trabajos</a>
+            <a href="./pages/trabajos.html" class="nav-links">Trabajos</a>
           </li>
 
           <li class="nav-items">
-            <a href="#" class="nav-links">Soluciones</a>
+            <a href="#features" class="nav-links">Soluciones</a>
           </li>
 
           <li class="nav-items">
-            <a href="#" class="nav-links">Nosotros</a>
+            <a href="./pages/nosotros.html" class="nav-links">Nosotros</a>
           </li>
 
           <li class="nav-items">
-            <a href="#" class="nav-links">Contactos</a>
+            <a href="./pages/contactos.html" class="nav-links">Contactos</a>
           </li>
 
           <li class="nav-items">
@@ -53,7 +57,19 @@
           <img src="./img/menu.svg" class="nav-img" />
         </div>
       </nav>
-      <section class="hero-container container">
+
+      <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+          var header = document.querySelector("header");
+          header.classList.toggle("abajo", window.scrollY > 0);
+        });
+      </script>
+    </header>
+    <!-- Navbar -->
+
+    <!-- Hero -->
+    <main>
+      <section class="hero hero-container container">
         <h1 class="hero-tittle">DIC Tecnology Solutions</h1>
         <p class="hero-parragraph">
           Brindamos servicios totalmente personalizados para cada proyecto, ya
@@ -63,17 +79,14 @@
         </p>
         <a href="#" class="cta">Ver Presentaciones</a>
       </section>
-    </header>
-    <!-- HERO -->
 
-    <main>
       <!-- SERVICES -->
       <section id="services">
         <div class="container">
           <div class="row mb-3">
             <div class="col-md-8 mx-auto text-center">
-              <h1>Servicios</h1>
-              <p>
+              <h1 class="title">Servicios</h1>
+              <p class="sub">
                 Lorem ipsum dolor sit amet consectetur nisi necessitatibus
                 repellat distinctio eveniet eaque fuga in cumque optio
                 consectetur harum vitae debitis sapiente praesentium aperiam aut
@@ -87,7 +100,7 @@
                   <i class="bx bxs-check-shield"></i>
                 </div>
                 <h5 class="mt-4 mb-2">Servicios</h5>
-                <p>
+                <p class="sub">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
                   perspiciatis illo asperiores perferendis
                 </p>
@@ -99,7 +112,7 @@
                   <i class="bx bxs-comment-detail"></i>
                 </div>
                 <h5 class="mt-4 mb-2">Servicios</h5>
-                <p>
+                <p class="sub">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
                   perspiciatis illo asperiores perferendis
                 </p>
@@ -111,7 +124,7 @@
                   <i class="bx bxs-cog"></i>
                 </div>
                 <h5 class="mt-4 mb-2">Servicios</h5>
-                <p>
+                <p class="sub">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
                   perspiciatis illo asperiores perferendis
                 </p>
@@ -123,7 +136,7 @@
                   <i class="bx bxs-heart"></i>
                 </div>
                 <h5 class="mt-4 mb-2">Servicios</h5>
-                <p>
+                <p class="sub">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
                   perspiciatis illo asperiores perferendis
                 </p>
@@ -135,7 +148,7 @@
                   <i class="bx bxs-rocket"></i>
                 </div>
                 <h5 class="mt-4 mb-2">Servicios</h5>
-                <p>
+                <p class="sub">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
                   perspiciatis illo asperiores perferendis
                 </p>
@@ -147,7 +160,7 @@
                   <i class="bx bxs-doughnut-chart"></i>
                 </div>
                 <h5 class="mt-4 mb-2">Servicios</h5>
-                <p>
+                <p class="sub">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
                   perspiciatis illo asperiores perferendis
                 </p>
@@ -225,94 +238,22 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="about-main">
-          <article class="about-icons">
-            <img
-              src="./img/casas-inteligentes.png"
-              alt="casas-inteligentes"
-              class="about-img"
-            />
-          </article>
-
-          <article class="about-icons">
-            <img
-              src="./img/casa-inteligente2.png"
-              alt="casas-inteligentes2"
-              class="about-img"
-            />
-          </article>
-
-          <article class="about-icons">
-            <img
-              src="./img/iluminacion-hogar.jpg"
-              alt="iluminación"
-              class="about-img"
-            />
-          </article>
-
-          <article class="about-icons">
-            <img
-              src="./img/mueble-usb.jpg"
-              alt="casas-inteligentes2"
-              class="about-img"
-            />
-          </article>
-
-          <article class="about-icons">
-            <img
-              src="./img/led-cocina.jpg"
-              alt="casas-inteligentes2"
-              class="about-img"
-            />
-          </article>
-
-          <article class="about-icons">
-            <img
-              src="./img/led-socalos.jpg"
-              alt="casas-inteligentes2"
-              class="about-img"
-            />
-          </article>
-
-          <article class="about-icons">
-            <img
-              src="./img/luces-led-sensor.jpg"
-              alt="casas-inteligentes2"
-              class="about-img"
-            />
-          </article>
-
-          <article class="about-icons">
-            <img
-              src="./img/puerto-usb.jpg"
-              alt="casas-inteligentes2"
-              class="about-img"
-            />
-          </article>
-
-          <article class="about-icons">
-            <img
-              src="./img/focos-led-en-comedor.jpg"
-              alt="casas-inteligentes2"
-              class="about-img"
-            />
-          </article>
-        </div> -->
       </section>
       <!-- HERO 2 / ABOUT -->
 
-      <!-- Feactures -->
-      <section class="row w-100 py-0 bg-light" id="features">
+      <!-- Soluciones -->
+      <section class="container row w-100 bg-light" id="features">
         <div class="col-lg-6 col-img"></div>
         <div class="col-lg-6 py-5">
           <div class="container">
             <div class="row">
               <div class="col-md-10 offset-md-1">
                 <h6 class="text-primary">PORQUE ELEGIRNOS</h6>
-                <h1>La mejor solución para tus problemas de iluminacion</h1>
+                <h1 class="title">
+                  La mejor solución para tus problemas de iluminacion
+                </h1>
                 <br />
-                <p>
+                <p class="sub">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Similique, laudantium nam animi aperiam optio recusandae
                   nesciunt facilis dolor accusamus maxime numquam veritatis qui,
@@ -327,40 +268,12 @@
                   Repellat reprehenderit quasi animi eius labore iusto est
                   voluptatem.
                 </p>
-
-                <!--                 <div class="feature d-flex mt-5 text-center">
-                  <div>
-                    <h5>COMERCIOS</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nihil perspiciatis illo
-                    </p>
-                  </div>
-                </div>
-                <div class="feature d-flex text-center">
-                  <div>
-                    <h5>HOSPITALES</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nihil perspiciatis illo
-                    </p>
-                  </div>
-                </div>
-                <div class="feature d-flex ">
-                  <div>
-                    <h5>CONSORCIO</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nihil perspiciatis illo
-                    </p>
-                  </div>
-                </div> -->
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Feactures -->
+      <!-- Soluciones -->
 
       <!-- FOOTER -->
       <footer class="footer">
@@ -370,7 +283,11 @@
 
             <ul class="nav-link nav-link--footer">
               <li class="nav-items">
-                <a href="#" class="nav-links">Inicio</a>
+                <a
+                  href="https://www.dicsecuritysolutions.com/"
+                  class="nav-links"
+                  >Inicio Corporativo</a
+                >
               </li>
               <li class="nav-items">
                 <a href="#" class="nav-links">Acerca de</a>
@@ -414,7 +331,15 @@
               ><img src="./img/youtube.svg" class="footer-img"
             /></a>
           </div>
-
+          <!-- boton WhatsApp -->
+          <a
+            href="https://api.whatsapp.com/send?phone=541164864919"
+            class="btn-wsp"
+            target="_blank"
+          >
+            <i class="bx bxl-whatsapp"></i
+          ></a>
+          <!-- boton WhatsApp -->
           <h3 class="footer-copyright">
             Derechos reservados &copy; DIC Tecnology Solutions
           </h3>

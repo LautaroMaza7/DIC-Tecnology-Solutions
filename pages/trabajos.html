@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIC Tecnology Solutions</title>
+    <!-- link de icon -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/pages.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <!-- Navbar-->
+  <body>
+    <header>
+      <nav class="nav container">
+        <div class="nav-logo">
+          <a href="../index.html" class="nav-title">DIC</a>
+        </div>
+
+        <ul class="nav-link nav-link--menu">
+          <li class="nav-items">
+            <a href="#" class="nav-linkscustom">Trabajos</a>
+          </li>
+
+          <li class="nav-items">
+            <a href="../pages/nosotros.html" class="nav-linkscustom">Nosotros</a>
+          </li>
+
+          <li class="nav-items">
+            <a href="../pages/contactos.html" class="nav-linkscustom">Contactos</a>
+          </li>
+
+          <li class="nav-items">
+            <a href="../index.html" class="ctaD">DIC Tecnology Solutions</a>
+          </li>
+
+          <img src="../img/close.svg" class="nav-close" />
+        </ul>
+
+        <div class="nav-menu">
+          <img src="../img/menu.svg" class="nav-img" />
+        </div>
+      </nav>
+
+      <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+          var header = document.querySelector("header");
+          header.classList.toggle("abajo", window.scrollY > 0);
+        });
+      </script>
+    </header>
+    <!-- Navbar -->
+
+
+    <section id="portfolio">
+        <div class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <h6 class="text-primary">TRABAJOS</h6>
+                    <h1>Nuestros Trabajos</h1>
+                    <p class="m-4">Lorem ipsum dolor sit amet consectetur nisi necessitatibus repellat distinctio eveniet eaque fuga
+                        in cumque optio consectetur harum vitae debitis sapiente praesentium aperiam aut</p>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="project">
+                        <img src="../img/iluminación-comecial-3.jpg" alt="">
+                        <div class="overlay">
+ <!--                            <div>
+                                <h4 class="text-dark">Project Title</h4>
+                                <h6 class="text-dark">Website Design</h6>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="project">
+                        <img src="../img/puerto-usb.jpg" alt="">
+                        <div class="overlay">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="project">
+                        <img src="../img/mueble-usb.jpg" alt="">
+                        <div class="overlay">
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="project">
+                        <img src="../img/led-socalos.jpg" alt="">
+                        <div class="overlay">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="project">
+                        <img src="../img/pantallas-led.jpg" alt="">
+                        <div class="overlay">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="project">
+                        <img src="../img/monitor-urgencia.jpg" alt="">
+                        <div class="overlay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+        <footer class="footer">
+            <section class="footer-container container">
+              <nav class="nav-footer">
+                <h2 class="footer-title">DIC</h2>
+    
+                <ul class="nav-link nav-link--footer">
+                  <li class="nav-items">
+                    <a href="https://www.dicsecuritysolutions.com/" class="nav-links">Inicio Corporativo</a>
+                  </li>
+                  <li class="nav-items">
+                    <a href="#" class="nav-links">Acerca de</a>
+                  </li>
+                  <li class="nav-items">
+                    <a href="#" class="nav-links">Contacto</a>
+                  </li>
+                  <li class="nav-items">
+                    <a href="#" class="nav-links">Blog</a>
+                  </li>
+                </ul>
+              </nav>
+    
+              <form
+                class="footer-form"
+                action="https://formspree.io/f/mknkkrkj"
+                method="POST"
+              >
+                <h2 class="footer-newsletter">Suscribete a la newsletter</h2>
+                <div class="footer-inputs">
+                  <input
+                    type="email"
+                    placeholder="Email:"
+                    class="footer-input"
+                    name="_replyto"
+                  />
+                  <input type="submit" value="Registrate" class="footer-submit" />
+                </div>
+              </form>
+            </section>
+    
+            <section class="footer-copy container">
+              <div class="footer__social">
+                <a href="#" class="footer-icons"
+                  ><img src="../img/facebook.svg" class="footer-img"
+                /></a>
+                <a href="#" class="footer__icons"
+                  ><img src="../img/twitter.svg" class="footer-img"
+                /></a>
+                <a href="#" class="footer__icons"
+                  ><img src="../img/youtube.svg" class="footer-img"
+                /></a>
+              </div>
+            <!-- boton WhatsApp -->
+            <a
+            href="https://api.whatsapp.com/send?phone=541164864919"
+            class="btn-wsp"
+            target="_blank"
+          >
+            <i class="bx bxl-whatsapp"></i
+          ></a>
+            <!-- boton WhatsApp -->
+              <h3 class="footer-copyright">
+                Derechos reservados &copy; DIC Tecnology Solutions
+              </h3>
+            </section>
+        </footer>
+    <!-- FOOTER -->
+        </main>
+        <script src="../js/app.js"></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+          integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+          integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+          crossorigin="anonymous"
+        ></script>
+      </body>
+    </html>
