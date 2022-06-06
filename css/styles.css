@@ -107,7 +107,7 @@ header{
     text-decoration: none;
 }
 .nav-linkcustom{
-    color: #3f5eac;
+    color: var(--primary)!important;
 }
 
 .nav-menu{
@@ -140,7 +140,6 @@ header ul li{
 header ul li a{
     position: relative;
     text-decoration: none;
-    color: rgb(61, 45, 45);
     transition: 0.7s;
 }
 header.abajo{
@@ -148,7 +147,7 @@ header.abajo{
     padding: 5px 10px;
 }
 header.abajo .logo,header.abajo ul li a{
-	color: var(--color-secundary);
+	color: var(--primary);
 }
 
 /* NAVBAR */
@@ -186,7 +185,7 @@ header.abajo .logo,header.abajo ul li a{
     display: flexbox;
     background-color: rgb(48, 151, 211);
     justify-self: center;
-    color: #fff;
+    color: #fff!important;
     text-decoration: none;
     padding: 5px 15px;
     border-radius: 20px;
