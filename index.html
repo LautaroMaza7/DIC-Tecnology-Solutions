@@ -24,66 +24,84 @@
   <!-- Navbar-->
   <body>
     <header>
-      <nav class="nav container">
-        <div class="nav-logo">
-          <a href="./index.html" class="nav-title">DIC</a>
-        </div>
+      <nav class="navbar navbar-expand-lg py-3 fixed-top navbar-white">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">DIC</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <ul class="nav-link nav-link--menu">
-          <li class="nav-items">
-            <a href="./pages/trabajos.html" class="nav-links">Trabajos</a>
-          </li>
-
-          <li class="nav-items">
-            <a href="#features" class="nav-links">Soluciones</a>
-          </li>
-
-          <li class="nav-items">
-            <a href="./pages/nosotros.html" class="nav-links">Nosotros</a>
-          </li>
-
-          <li class="nav-items">
-            <a href="./pages/contactos.html" class="nav-links">Contactos</a>
-          </li>
-
-          <li class="nav-items">
-            <a href="#" class="ctaD">DIC Tecnology Solutions</a>
-          </li>
-
-          <img src="./img/close.svg" class="nav-close" />
-        </ul>
-
-        <div class="nav-menu">
-          <img src="./img/menu.svg" class="nav-img" />
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/trabajos.html">Trabajos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Soluciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contactos.html">Contactos</a>
+              </li>
+              <button class="btn btn-primary">DIC Tecnology Solutions</button>
+              <!--               <li class="nav-item">
+                <a class="ctaD text-white" href="#"></a>
+              </li> -->
+            </ul>
+          </div>
         </div>
       </nav>
-
       <script type="text/javascript">
         window.addEventListener("scroll", function () {
           var header = document.querySelector("header");
           header.classList.toggle("abajo", window.scrollY > 0);
+        });
+        var nav = document.querySelector("nav");
+        window.addEventListener("scroll", function () {
+          if (window.pageYOffset > 0) {
+            nav.classList.add("bg-white", "shadow");
+          } else {
+            nav.classList.remove("bg-white", "shadow");
+          }
         });
       </script>
     </header>
     <!-- Navbar -->
 
     <!-- Hero -->
-    <main>
-      <section class="hero hero-container container">
-        <h1 class="hero-tittle">DIC Tecnology Solutions</h1>
-        <p class="hero-parragraph">
-          Brindamos servicios totalmente personalizados para cada proyecto, ya
-          que sumamos los requerimientos del cliente con nuestra experiencia en
-          el rubro para brindarle una solución que cumpla sus expectativas de
-          manera óptima
-        </p>
-        <a href="#" class="cta">Ver Presentaciones</a>
-      </section>
+    <div class="hero vh-100 d-flex align-items-center" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="hero-banner col-lg-7 mx-auto text-center">
+            <h1 class="display-4 text-white">DIC Tecnology Solutions</h1>
+            <p class="text-white my-3">
+              Brindamos servicios totalmente personalizados para cada proyecto,
+              ya que sumamos los requerimientos del cliente con nuestra
+              experiencia en el rubro para brindarle una solución que cumpla sus
+              expectativas de manera óptima
+            </p>
+            <a href="#" class="btn me-2 btn-primary">Ver Presentaciones</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //HERO -->
 
+    <main>
       <!-- SERVICES -->
       <section id="services">
         <div class="container">
-          <div class="row mb-3">
+          <div class="row mb-5">
             <div class="col-md-8 mx-auto text-center">
               <h1 class="title">Servicios</h1>
               <p class="sub">
@@ -242,32 +260,57 @@
       <!-- HERO 2 / ABOUT -->
 
       <!-- Soluciones -->
-      <section class="container row w-100 bg-light" id="features">
+      <section class="row w-100 py-0 bg-light" id="features">
         <div class="col-lg-6 col-img"></div>
         <div class="col-lg-6 py-5">
           <div class="container">
             <div class="row">
               <div class="col-md-10 offset-md-1">
                 <h6 class="text-primary">PORQUE ELEGIRNOS</h6>
-                <h1 class="title">
-                  La mejor solución para tus problemas de iluminacion
-                </h1>
-                <br />
-                <p class="sub">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Similique, laudantium nam animi aperiam optio recusandae
-                  nesciunt facilis dolor accusamus maxime numquam veritatis qui,
-                  eum vel eius excepturi, voluptates dicta consequuntur. Animi,
-                  assumenda. Repellat, mollitia rerum error architecto incidunt
-                  veniam quos ullam itaque quo culpa placeat dignissimos
-                  impedit! Reiciendis delectus similique voluptatem nobis
-                  doloremque labore. Facere pariatur esse necessitatibus
-                  cupiditate sapiente. Exercitationem voluptas tenetur mollitia
-                  ipsum maxime dolorem, nemo minima commodi eligendi sequi optio
-                  quaerat ab facere quibusdam, nam, porro adipisci rerum?
-                  Repellat reprehenderit quasi animi eius labore iusto est
-                  voluptatem.
+                <h1>La mejor soluvion para tus problemas de iluminación</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur nisi necessitatibus
+                  repellat distinctio eveniet eaque fuga in cumque optio
+                  consectetur harum vitae debitis sapiente praesentium aperiam
+                  aut
                 </p>
+
+                <div class="feature d-flex mt-5">
+                  <div class="iconbox me-3">
+                    <i class="bx bxs-comment-edit"></i>
+                  </div>
+                  <div>
+                    <h5>Feature</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nihil perspiciatis illo
+                    </p>
+                  </div>
+                </div>
+                <div class="feature d-flex">
+                  <div class="iconbox me-3">
+                    <i class="bx bxs-user-circle"></i>
+                  </div>
+                  <div>
+                    <h5>Feature</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nihil perspiciatis illo
+                    </p>
+                  </div>
+                </div>
+                <div class="feature d-flex">
+                  <div class="iconbox me-3">
+                    <i class="bx bxs-download"></i>
+                  </div>
+                  <div>
+                    <h5>Feature</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nihil perspiciatis illo
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -276,74 +319,60 @@
       <!-- Soluciones -->
 
       <!-- FOOTER -->
-      <footer class="footer">
-        <section class="footer-container container">
-          <nav class="nav-footer">
-            <h2 class="footer-title">DIC</h2>
-
-            <ul class="nav-link nav-link--footer">
-              <li class="nav-items">
-                <a
-                  href="https://www.dicsecuritysolutions.com/"
-                  class="nav-links"
-                  >Inicio Corporativo</a
-                >
-              </li>
-              <li class="nav-items">
-                <a href="#" class="nav-links">Acerca de</a>
-              </li>
-              <li class="nav-items">
-                <a href="#" class="nav-links">Contacto</a>
-              </li>
-              <li class="nav-items">
-                <a href="#" class="nav-links">Blog</a>
-              </li>
-            </ul>
-          </nav>
-
-          <form
-            class="footer-form"
-            action="https://formspree.io/f/mknkkrkj"
-            method="POST"
-          >
-            <h2 class="footer-newsletter">Suscribete a la newsletter</h2>
-            <div class="footer-inputs">
-              <input
-                type="email"
-                placeholder="Email:"
-                class="footer-input"
-                name="_replyto"
-              />
-              <input type="submit" value="Registrate" class="footer-submit" />
+      <footer>
+        <div class="footer-top py-2">
+          <div class="container p-5">
+            <div class="row gy-2">
+              <div class="col-lg-4">
+                <a class="logo text-white" href="../index.html">DIC</a>
+              </div>
+              <div class="col-lg-4">
+                <h5 class="text-white">Navegacion</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Pricing</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <h5 class="text-white">Contact</h5>
+                <ul class="list-unstyled">
+                  <li>Buenos Aires, Argentina</li>
+                  <li>Email: dic.sscontacto@gmail.com</li>
+                  <li>Phone: (+54) 11-6486-4919</li>
+                </ul>
+              </div>
             </div>
-          </form>
-        </section>
-
-        <section class="footer-copy container">
-          <div class="footer__social">
-            <a href="#" class="footer-icons"
-              ><img src="./img/facebook.svg" class="footer-img"
-            /></a>
-            <a href="#" class="footer__icons"
-              ><img src="./img/twitter.svg" class="footer-img"
-            /></a>
-            <a href="#" class="footer__icons"
-              ><img src="./img/youtube.svg" class="footer-img"
-            /></a>
           </div>
-          <!-- boton WhatsApp -->
-          <a
-            href="https://api.whatsapp.com/send?phone=541164864919"
-            class="btn-wsp"
-            target="_blank"
-          >
-            <i class="bx bxl-whatsapp"></i
-          ></a>
-          <!-- boton WhatsApp -->
-          <h3 class="footer-copyright">
-            Derechos reservados &copy; DIC Tecnology Solutions
-          </h3>
-        </section>
+        </div>
+        <div class="footer-bottom py-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <p class="mb-0 copy-right">
+                  © 2022 Derechos reservados &copy; DIC Tecnology Solutions
+                </p>
+              </div>
+              <div class="col-md-6">
+                <div class="social-icons">
+                  <a href="#"><i class="bx bxl-facebook"></i></a>
+                  <a href="#"><i class="bx bxl-twitter"></i></a>
+                  <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- boton WhatsApp -->
+        <a
+          href="https://api.whatsapp.com/send?phone=541164864919"
+          class="btn-wsp"
+          target="_blank"
+        >
+          <i class="bx bxl-whatsapp"></i
+        ></a>
+        <!-- boton WhatsApp -->
       </footer>
       <!-- FOOTER -->
     </main>

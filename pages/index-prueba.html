@@ -1,0 +1,63 @@
+<!-- Navbar-->
+<body>
+  <header>
+    <nav class="nav container">
+      <div class="nav-logo">
+        <a href="./index.html" class="nav-title">DIC</a>
+      </div>
+
+      <ul class="nav-link nav-link--menu">
+        <li class="nav-items">
+          <a href="./pages/trabajos.html" class="nav-links">Trabajos</a>
+        </li>
+
+        <li class="nav-items">
+          <a href="#features" class="nav-links">Soluciones</a>
+        </li>
+
+        <li class="nav-items">
+          <a href="./pages/nosotros.html" class="nav-links">Nosotros</a>
+        </li>
+
+        <li class="nav-items">
+          <a href="./pages/contactos.html" class="nav-links">Contactos</a>
+        </li>
+
+        <li class="nav-items">
+          <a href="#" class="ctaD">DIC Tecnology Solutions</a>
+        </li>
+      </ul>
+    </nav>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("abajo", window.scrollY > 0);
+      });
+
+      var nav = document.querySelector("navbar");
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 0) {
+          nav.classList.add("bg-white", "shadow");
+        } else {
+          nav.classList.remove("bg-white", "shadow");
+        }
+      });
+    </script>
+  </header>
+  <!-- Navbar -->
+
+  <!-- Hero -->
+  <main>
+    <section class="hero hero-container container">
+      <h1 class="hero-tittle">DIC Tecnology Solutions</h1>
+      <p class="hero-parragraph">
+        Brindamos servicios totalmente personalizados para cada proyecto, ya que
+        sumamos los requerimientos del cliente con nuestra experiencia en el
+        rubro para brindarle una solución que cumpla sus expectativas de manera
+        óptima
+      </p>
+      <a href="#" class="cta">Ver Presentaciones</a>
+    </section>
+  </main>
+</body>

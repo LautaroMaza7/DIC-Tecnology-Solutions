@@ -1,6 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --padding-container: 10px;
+    --color-secundary: #243A73;
+    --primary: rgb(48, 151, 211);
+    --dark: #21252f;
+    --body: #888;
+    --white: #ffffff;
+    --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+}
+
+body{
+    font-family: "Sora", sans-serif !important;
+    line-height: 1.7;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 0px 0px;
+    z-index: 10;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+
+}
+
+a {
+    text-decoration: none!important;
+}
+
+.navbar-brand{
+    color: var(--primary)!important;
+    margin-right: 20px!important;
+}
+.nav-link{
+    color: var(--primary)!important;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    position: relative!important;
+    text-decoration: none;
+    transition: 0.7s;
+}
 section {
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.btn {
+    background: var(--primary)!important;
+    padding: 14px 18px;
+    border-radius: 20px!important;
+}
+
+.ctaD{
+    display: flexbox;
+    background-color: rgb(48, 151, 211);
+    justify-self: center;
+    color: #fff!important;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 20px;
 }
 
 img {
@@ -41,7 +122,79 @@ img {
     height: 125px;
     border-radius: 100px;
 }
-.footer{
-    background-color: var(--color-title);
-    margin-top: 50px!important;
+
+.social-icons {
+    display: flex;
+    justify-content: center;
 }
+.social-icons a {
+    width: 34px;
+    height: 34px;
+    background-color: var(--primary);
+    border-radius: 2px solid var(--primary);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+    border: 2px solid var(--primary);
+}
+
+.social-icons a:hover {
+    color: var(--primary);
+    background-color: transparent;
+    border-color: var(--primarys);
+}
+
+
+.logo {
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.footer-top {
+    margin-top: 20px!important;
+    background-color: var(--primary);
+}
+
+.footer-top a {
+    color: var(--dark);
+}
+
+.footer-top a:hover {
+    color: var(--white);
+}
+
+.footer-bottom {
+    background-color: var(--color-secundary);
+}
+.footer-bottom .copy-right{
+    color: #fff;
+}
+/* BOTON WHATSAPP */
+
+.btn-wsp{
+    position:fixed;
+    width:55px;
+    height:55px;
+    line-height:55px;
+    bottom:30px;
+    right:30px;
+    background:#0df053;
+    color:#fff;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow:0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+   }
+
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
+
+/* BOTON WHATSAPP */
