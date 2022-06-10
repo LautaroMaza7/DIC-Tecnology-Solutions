@@ -39,8 +39,8 @@ header{
 
 /* SERVICE */
 section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .service {
@@ -235,10 +235,6 @@ header.abajo .navbar-brand, header.abajo ul li a{
 /* HERO 2 / ABOUT */
 
 
-/* Soluciones */
-/* #features{
-    margin-left: 120px;
-} */
 
 .col-img {
     background-image: url(../img/personas-instalando.jpg);
@@ -247,6 +243,64 @@ header.abajo .navbar-brand, header.abajo ul li a{
     min-height: 100px;
 }
 /* Soluciones */
+
+
+/* SOLUCIONES 2 */
+
+.testimony{
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
+}
+
+.testimony__container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+}
+
+.testimony__body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.testimony__body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.testimony__img{
+    width: 500px;
+    min-height: 100px;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.testimony__texts{
+    max-width: 700px;
+}
+
+.testimony__course{
+    background-color: royalblue;
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+}
+
+.testimony__arrow{
+    width: 90%;
+    cursor: pointer;
+}
+/* SOLUCIONES 2 */
 
 
 /* Services */
@@ -403,6 +457,21 @@ header.abajo .navbar-brand, header.abajo ul li a{
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    .testimony__container{
+        grid-template-columns: 40px 1fr 40px;
+    }
+
+    .testimony__body{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 3em;
+        justify-items:center ;
+    }
+    .testimony__img{
+        width: 400px;
+        height: 400px;
+        
+    }
 }
 
 @media (max-width:474px){
@@ -416,5 +485,22 @@ header.abajo .navbar-brand, header.abajo ul li a{
     section{
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+    .testimony__container{
+        grid-template-columns: 40px 1fr 40px;
+    }
+
+    .testimony__body{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 3em;
+        justify-items:center ;
+    }
+
+
+    .testimony__img{
+        width: 200px;
+        height: 200px;
+        
     }
 }
