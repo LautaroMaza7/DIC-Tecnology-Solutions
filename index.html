@@ -11,8 +11,13 @@
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,7 +31,9 @@
     <header>
       <nav class="navbar navbar-expand-lg py-3 fixed-top navbar-white">
         <div class="container">
-          <a class="navbar-brand" href="./index.html">DIC</a>
+          <a class="navbar-brand" href="./index.html">
+            <img class="logo" src="./img/LOGO-dic.png" alt="" />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -42,10 +49,10 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="./pages/trabajos.html">Trabajos</a>
+                <a class="nav-link" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Soluciones</a>
+                <a class="nav-link" href="./pages/trabajos.html">Trabajos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
@@ -53,10 +60,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="./pages/contactos.html">Contactos</a>
               </li>
-              <button class="btn btn-primary">DIC Tecnology Solutions</button>
-              <!--               <li class="nav-item">
-                <a class="ctaD text-white" href="#"></a>
-              </li> -->
+              <button class="btn btn-danger btn-dic" onclick="redirect()">
+                Dic Security Solutions
+              </button>
             </ul>
           </div>
         </div>
@@ -83,7 +89,9 @@
       <div class="container">
         <div class="row">
           <div class="hero-banner col-lg-7 mx-auto text-center">
-            <h1 class="display-4 text-white">DIC Tecnology Solutions</h1>
+            <h1 class="display-4 text-white title-inicio">
+              DIC Tecnology Solutions
+            </h1>
             <p class="text-white my-3">
               Brindamos servicios totalmente personalizados para cada proyecto,
               ya que sumamos los requerimientos del cliente con nuestra
@@ -117,7 +125,7 @@
                 <div class="iconbox">
                   <i class="bx bxs-check-shield"></i>
                 </div>
-                <h5 class="mt-4 mb-2">Servicios</h5>
+                <h5 class="mt-4 mb-2">Seguridad</h5>
                 <p class="sub">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
                   perspiciatis illo asperiores perferendis
@@ -127,9 +135,9 @@
             <div class="col-lg-4 col-sm-6">
               <div class="service card-effect">
                 <div class="iconbox">
-                  <i class="bx bxs-comment-detail"></i>
+                  <i class="bx bx-bulb"></i>
                 </div>
-                <h5 class="mt-4 mb-2">Servicios</h5>
+                <h5 class="mt-4 mb-2">Iluminación</h5>
                 <p class="sub">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
                   perspiciatis illo asperiores perferendis
@@ -139,9 +147,9 @@
             <div class="col-lg-4 col-sm-6">
               <div class="service card-effect">
                 <div class="iconbox">
-                  <i class="bx bxs-cog"></i>
+                  <i class="bx bx-tv"></i>
                 </div>
-                <h5 class="mt-4 mb-2">Servicios</h5>
+                <h5 class="mt-4 mb-2">Carteleria Iluminaria</h5>
                 <p class="sub">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
                   perspiciatis illo asperiores perferendis
@@ -151,9 +159,9 @@
             <div class="col-lg-4 col-sm-6">
               <div class="service card-effect">
                 <div class="iconbox">
-                  <i class="bx bxs-heart"></i>
+                  <i class="bx bx-wifi"></i>
                 </div>
-                <h5 class="mt-4 mb-2">Servicios</h5>
+                <h5 class="mt-4 mb-2">Internet y Conexiones</h5>
                 <p class="sub">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
                   perspiciatis illo asperiores perferendis
@@ -163,9 +171,9 @@
             <div class="col-lg-4 col-sm-6">
               <div class="service card-effect">
                 <div class="iconbox">
-                  <i class="bx bxs-rocket"></i>
+                  <i class="bx bxs-building-house"></i>
                 </div>
-                <h5 class="mt-4 mb-2">Servicios</h5>
+                <h5 class="mt-4 mb-2">Servicios para Hogares y Edificios</h5>
                 <p class="sub">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
                   perspiciatis illo asperiores perferendis
@@ -175,9 +183,9 @@
             <div class="col-lg-4 col-sm-6">
               <div class="service card-effect">
                 <div class="iconbox">
-                  <i class="bx bxs-doughnut-chart"></i>
+                  <i class="bx bxs-devices"></i>
                 </div>
-                <h5 class="mt-4 mb-2">Servicios</h5>
+                <h5 class="mt-4 mb-2">Custom App Control</h5>
                 <p class="sub">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
                   perspiciatis illo asperiores perferendis
@@ -189,308 +197,92 @@
       </section>
       <!-- SERVICES -->
 
-      <!-- HERO 2 / ABOUT -->
-      <section class="container about">
-        <h2 class="subtitle">Más confort y bienestar</h2>
-        <p class="about-paragraph">
-          La tecnologia brinda una larga lista de beneficios que podrás
-          disfrutar desde el primer día. Para empezar, tu casa será más cómoda y
-          confortable. Podrás controlar aspectos como la climatización y la
-          iluminación para crear el mejor ambiente. Además, simplificarás tu
-          vida cotidiana y te liberarás de numerosas tareas, con lo que tu
-          bienestar crecerá considerablemente. Otro aspecto que la domótica es
-          capaz de mejorar es la accesibilidad del hogar para personas con
-          alguna discapacidad, facilitándoles la realización de numerosas tareas
-          y el manejo de diferentes instalaciones, aumentando también su
-          seguridad.
-        </p>
-
-        <div class="card-group">
-          <div class="card m-2">
-            <img
-              src="./img/iluminación-comecial-3.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">COMERCIOS</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
-          <div class="card m-2">
-            <img src="./img/luzled-sala.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">CONSORCIO</h5>
-              <p class="card-text">
-                This card has supporting text below as a natural lead-in to
-                additional content.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
-          <div class="card m-2">
-            <img
-              src="./img/monitor-urgencia.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">HOSPITALES</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- HERO 2 / ABOUT -->
-
       <!-- Soluciones -->
-      <section class="testimony">
-        <div class="testimony__container container">
-          <img src="./img/leftarrow.svg" class="testimony__arrow" id="before" />
-          <section class="testimony__body testimony__body--show" data-id="1">
-            <figure class="testimony__picture">
-              <img
-                src="./img/personas-instalando.jpg"
-                class="col-lg-6 testimony__img"
-              />
-            </figure>
-            <div class="testimony__texts">
-              <div class="col-md-10 offset-md-1">
-                <h6 class="text-primary">PORQUE ELEGIRNOS</h6>
-                <h1>La mejor soluvion para tus problemas de iluminación</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur nisi necessitatibus
-                  repellat distinctio eveniet eaque fuga in cumque optio
-                  consectetur harum vitae debitis sapiente praesentium aperiam
-                  aut
+      <section id="slider" class="pt-5">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center">
+              <h6 class="text-primary">PORQUE ELEGIRNOS?</h6>
+              <h1>La mejor solucion para tus problemas de iluminación</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur nisi necessitatibus
+                repellat distinctio eveniet eaque fuga in cumque optio
+                consectetur harum vitae debitis sapiente praesentium aperiam aut
+              </p>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="owl-carousel">
+              <div class="slider-card">
+                <div
+                  class="d-flex justify-content-center align-items-center mb-4"
+                >
+                  <img src="img/iluminacion-comercial-slider.jpg" alt="" />
+                </div>
+                <h5 class="mb-0 text-center"><b>Tiendas</b></h5>
+                <p class="text-center p-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ipsam temporibus quidem magni qui doloribus quasi natus
+                  inventore nisi velit minima.
                 </p>
-
-                <div class="feature d-flex mt-5">
-                  <div class="iconbox me-3">
-                    <i class="bx bxs-comment-edit"></i>
-                  </div>
-                  <div>
-                    <h5>Feature</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nihil perspiciatis illo
-                    </p>
-                  </div>
+              </div>
+              <div class="slider-card">
+                <div
+                  class="d-flex justify-content-center align-items-center mb-4"
+                >
+                  <img src="img/pantallas-led-slider.jpg" alt="" />
                 </div>
-                <div class="feature d-flex">
-                  <div class="iconbox me-3">
-                    <i class="bx bxs-user-circle"></i>
-                  </div>
-                  <div>
-                    <h5>Feature</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nihil perspiciatis illo
-                    </p>
-                  </div>
+                <h5 class="mb-0 text-center"><b>Oficinas</b></h5>
+                <p class="text-center p-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ipsam temporibus quidem magni qui doloribus quasi natus
+                  inventore nisi velit minima.
+                </p>
+              </div>
+              <div class="slider-card">
+                <div
+                  class="d-flex justify-content-center align-items-center mb-4"
+                >
+                  <img src="img/fabricas-slider.jpg" alt="" />
                 </div>
-                <div class="feature d-flex">
-                  <div class="iconbox me-3">
-                    <i class="bx bxs-download"></i>
-                  </div>
-                  <div>
-                    <h5>Feature</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nihil perspiciatis illo
-                    </p>
-                  </div>
+                <h5 class="mb-0 text-center"><b>Fabricas</b></h5>
+                <p class="text-center p-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ipsam temporibus quidem magni qui doloribus quasi natus
+                  inventore nisi velit minima.
+                </p>
+              </div>
+              <div class="slider-card">
+                <div
+                  class="d-flex justify-content-center align-items-center mb-4"
+                >
+                  <img src="img/restaurant-slider.jpg" alt="" />
                 </div>
+                <h5 class="mb-0 text-center"><b>Locales</b></h5>
+                <p class="text-center p-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ipsam temporibus quidem magni qui doloribus quasi natus
+                  inventore nisi velit minima.
+                </p>
+              </div>
+              <div class="slider-card">
+                <div
+                  class="d-flex justify-content-center align-items-center mb-4"
+                >
+                  <img src="img/led-cocina-slider.jpg" alt="" />
+                </div>
+                <h5 class="mb-0 text-center"><b>Hogares</b></h5>
+                <p class="text-center p-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ipsam temporibus quidem magni qui doloribus quasi natus
+                  inventore nisi velit minima.
+                </p>
               </div>
             </div>
-          </section>
-
-          <section class="testimony__body testimony__body--show" data-id="2">
-            <figure class="testimony__picture">
-              <img src="./img/personas-instalando.jpg" class="testimony__img" />
-            </figure>
-            <div class="testimony__texts">
-              <div class="col-md-10 offset-md-1">
-                <h6 class="text-primary">PORQUE ELEGIRNOS</h6>
-                <h1>La mejor soluvion para tus problemas de iluminación</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur nisi necessitatibus
-                  repellat distinctio eveniet eaque fuga in cumque optio
-                  consectetur harum vitae debitis sapiente praesentium aperiam
-                  aut
-                </p>
-
-                <div class="feature d-flex mt-5">
-                  <div class="iconbox me-3">
-                    <i class="bx bxs-comment-edit"></i>
-                  </div>
-                  <div>
-                    <h5>Feature</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nihil perspiciatis illo
-                    </p>
-                  </div>
-                </div>
-                <div class="feature d-flex">
-                  <div class="iconbox me-3">
-                    <i class="bx bxs-user-circle"></i>
-                  </div>
-                  <div>
-                    <h5>Feature</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nihil perspiciatis illo
-                    </p>
-                  </div>
-                </div>
-                <div class="feature d-flex">
-                  <div class="iconbox me-3">
-                    <i class="bx bxs-download"></i>
-                  </div>
-                  <div>
-                    <h5>Feature</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nihil perspiciatis illo
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="testimony__body testimony__body--show" data-id="3">
-            <figure class="testimony__picture">
-              <img src="./img/personas-instalando.jpg" class="testimony__img" />
-            </figure>
-            <div class="testimony__texts">
-              <div class="col-md-10 offset-md-1">
-                <h6 class="text-primary">PORQUE ELEGIRNOS</h6>
-                <h1>La mejor soluvion para tus problemas de iluminación</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur nisi necessitatibus
-                  repellat distinctio eveniet eaque fuga in cumque optio
-                  consectetur harum vitae debitis sapiente praesentium aperiam
-                  aut
-                </p>
-
-                <div class="feature d-flex mt-5">
-                  <div class="iconbox me-3">
-                    <i class="bx bxs-comment-edit"></i>
-                  </div>
-                  <div>
-                    <h5>Feature</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nihil perspiciatis illo
-                    </p>
-                  </div>
-                </div>
-                <div class="feature d-flex">
-                  <div class="iconbox me-3">
-                    <i class="bx bxs-user-circle"></i>
-                  </div>
-                  <div>
-                    <h5>Feature</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nihil perspiciatis illo
-                    </p>
-                  </div>
-                </div>
-                <div class="feature d-flex">
-                  <div class="iconbox me-3">
-                    <i class="bx bxs-download"></i>
-                  </div>
-                  <div>
-                    <h5>Feature</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nihil perspiciatis illo
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="testimony__body testimony__body--show" data-id="4">
-            <figure class="testimony__picture">
-              <img src="./img/personas-instalando.jpg" class="testimony__img" />
-            </figure>
-            <div class="testimony__texts">
-              <div class="col-md-10 offset-md-1">
-                <h6 class="text-primary">PORQUE ELEGIRNOS</h6>
-                <h1>La mejor soluvion para tus problemas de iluminación</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur nisi necessitatibus
-                  repellat distinctio eveniet eaque fuga in cumque optio
-                  consectetur harum vitae debitis sapiente praesentium aperiam
-                  aut
-                </p>
-
-                <div class="feature d-flex mt-5">
-                  <div class="iconbox me-3">
-                    <i class="bx bxs-comment-edit"></i>
-                  </div>
-                  <div>
-                    <h5>Feature</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nihil perspiciatis illo
-                    </p>
-                  </div>
-                </div>
-                <div class="feature d-flex">
-                  <div class="iconbox me-3">
-                    <i class="bx bxs-user-circle"></i>
-                  </div>
-                  <div>
-                    <h5>Feature</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nihil perspiciatis illo
-                    </p>
-                  </div>
-                </div>
-                <div class="feature d-flex">
-                  <div class="iconbox me-3">
-                    <i class="bx bxs-download"></i>
-                  </div>
-                  <div>
-                    <h5>Feature</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nihil perspiciatis illo
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <img src="./img/rightarrow.svg" class="testimony__arrow" id="next" />
+          </div>
         </div>
       </section>
-
-      <!-- Soluciones  -->
+      <!-- Soluciones -->
 
       <!-- FOOTER -->
       <footer>
@@ -498,15 +290,18 @@
           <div class="container p-5">
             <div class="row gy-2">
               <div class="col-lg-4">
-                <a class="logo text-white" href="../index.html">DIC</a>
+                <a class="logo text-white" href="../index.html">
+                  <img class="logo-footer" src="./img/LOGO-dic.png" alt="" />
+                </a>
               </div>
               <div class="col-lg-4">
                 <h5 class="text-white">Navegacion</h5>
                 <ul class="list-unstyled">
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#services">Servicios</a></li>
+                  <li><a href="#slider">Soluciones</a></li>
+                  <li><a href="./pages/trabajos.html">Trabajos</a></li>
+                  <li><a href="/pages/nosotros.html">Nosotros</a></li>
+                  <li><a href="./pages/contactos.html">Contactos</a></li>
                 </ul>
               </div>
               <div class="col-lg-4">
@@ -550,7 +345,9 @@
       </footer>
       <!-- FOOTER -->
     </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

@@ -24,7 +24,9 @@
       <!-- Navbar  -->
       <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
       <div class="container">
-        <a class="navbar-brand" href="../index.html">DIC</a>
+        <a class="navbar-brand" href="/index.html">
+          <img class="logo" src="../img/LOGO-dic.png" alt="" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -40,12 +42,11 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="../pages/trabajos.html"
-                >Trabajos</a
-              >
+              <a class="nav-link" href="/index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Soluciones</a>
+              <a class="nav-link" href="../pages/trabajos.html"
+                >Trabajos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../pages/nosotros.html"
@@ -57,7 +58,9 @@
                 >Contactos</a
               >
             </li>
-            <button class="btn btn-primary">DIC Tecnology Solutions</button>
+            <button class="btn btn-danger btn-dic" onclick="redirect()">
+              Dic Security Solutions
+            </button>
           </ul>
         </div>
       </div>
@@ -66,12 +69,83 @@
     </header>
     <!-- Navbar -->
 
+    <!-- HERO 2 / ABOUT -->
+    <section class="container about">
+      <h6 class="text-primary">TRABAJOS</h6>
+      <h1>Que tipo de trabajos brindamos?</h1>
+      <p class="m-4">
+        La tecnologia brinda una larga lista de beneficios que podrás
+        disfrutar desde el primer día. Para empezar, tu casa será más cómoda y
+        confortable. Podrás controlar aspectos como la climatización y la
+        iluminación para crear el mejor ambiente. Además, simplificarás tu
+        vida cotidiana y te liberarás de numerosas tareas, con lo que tu
+        bienestar crecerá considerablemente. Otro aspecto que la domótica es
+        capaz de mejorar es la accesibilidad del hogar para personas con
+        alguna discapacidad, facilitándoles la realización de numerosas tareas
+        y el manejo de diferentes instalaciones, aumentando también su
+        seguridad.
+      </p>
+
+      <div class="card-group">
+        <div class="card m-2">
+          <img
+            src="../img/iluminación-comecial-3.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">ILUMINACION</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card m-2">
+          <img src="../img/luzled-sala.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">CONEXIONES</h5>
+            <p class="card-text">
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card m-2">
+          <img
+            src="../img/monitor-urgencia.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">CARTELES</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HERO 2 / ABOUT -->
+
+
 
     <section id="portfolio">
         <div class="container-fluid">
             <div class="row mb-5">
                 <div class="col-md-8 mx-auto text-center">
-                    <h6 class="text-primary">TRABAJOS</h6>
                     <h1>Nuestros Trabajos</h1>
                     <p class="m-4">Lorem ipsum dolor sit amet consectetur nisi necessitatibus repellat distinctio eveniet eaque fuga
                         in cumque optio consectetur harum vitae debitis sapiente praesentium aperiam aut</p>
@@ -137,15 +211,17 @@
             <div class="container p-5">
               <div class="row gy-2">
                 <div class="col-lg-4">
-                  <a class="logo text-white" href="../index.html">DIC</a>
+                  <a class="logo text-white" href="../index.html">
+                    <img class="logo-footer" src="../img/LOGO-dic.png" alt="" />
+                  </a>
                 </div>
                 <div class="col-lg-4">
                   <h5 class="text-white">Navegacion</h5>
                   <ul class="list-unstyled">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
+                    <li><a href="/index.html#services">Servicios</a></li>
+                    <li><a href="/index.html#slider">Soluciones</a></li>
+                    <li><a href="/pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="/pages/contactos.html">Contactos</a></li>
                   </ul>
                 </div>
                 <div class="col-lg-4">

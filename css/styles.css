@@ -12,8 +12,9 @@
 
 body{
     font-family: "Sora", sans-serif !important;
-    line-height: 1.7;
+    line-height: 1.5!important;
 }
+
 
 header{
     position: fixed;
@@ -119,21 +120,25 @@ a {
     color: #fff!important;
     margin-right: 20px!important;
 }
+.logo {
+    width: 50px;
+}
+.logo-footer{
+    width: 150px;
+}
 
-.nav-link{
-    color: white!important;
-    margin-left: auto;
-    padding: 0;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: max-content;
-    gap: 2em;
+.navbar .nav-link{
+    color: white;
+
 }
 
 .btn {
     background: var(--primary)!important;
     padding: 14px 18px;
     border-radius: 20px!important;
+}
+.btn-dic{
+    background: #DE0024!important;
 }
 
 header ul{
@@ -184,123 +189,73 @@ header.abajo .navbar-brand, header.abajo ul li a{
 }
 /* Hero Container */
 
-/* HERO 2 / ABOUT */
-.about{
-    text-align: center;
-}
-
-.subtitle{
-    color: var(--primary);
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 25px;
-}
-
-.card-title{
-    color: var(--primary);
-}
-.card-text{
-    font-weight: 400;
-    color: #243A73;
-}
-
-.about-paragraph{
-    line-height: 1.4;
-    color: #243A73;
-    font-weight: 400;
-}
-
-.about-main{
-    padding-top: 80px;
-    display: grid;
-    width: 90%;
-    margin: 0 auto;
-    gap: 1em;
-    overflow: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
-}
-
-.about-icons{
-    display: grid;
-    gap: 4em;
-    justify-items: center;
-    width: 300px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.about-img{
-    width: 300px;
-}
-/* HERO 2 / ABOUT */
 
 
 
 .col-img {
-    background-image: url(../img/personas-instalando.jpg);
-    background-position: center;
-    background-size: cover;
     min-height: 100px;
 }
 /* Soluciones */
 
 
-/* SOLUCIONES 2 */
-
-.testimony{
-    padding-top: 20px!important;
-    padding-bottom: 20px!important;
-}
-
-.testimony__container{
-    display: grid;
-    grid-template-columns: 50px 1fr 50px;
-    gap: 1em;
-    align-items: center;
-}
-
-.testimony__body{
-    display: grid;
-    grid-template-columns: 1fr max-content;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2em;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    opacity: 0;
-    pointer-events: none;
-}
-
-
-.testimony__body--show{
-    pointer-events: unset;
+/* SLIDER CAROUSEL */
+.slider {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .slider .owl-item.active.center .slider-card {
+    transform: scale(1.15);
     opacity: 1;
-    transition: opacity 1.5s ease-in-out;
-}
-
-.testimony__img{
-    width: 500px;
-    min-height: 100px;
-    object-fit: cover;
-    object-position: 50% 30%;
-}
-
-.testimony__texts{
-    max-width: 700px;
-}
-
-.testimony__course{
-    background-color: royalblue;
+    background: var(--primary); /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to bottom, #ff5e62, #ff9966); */ /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to bottom, #ff5e62, #ff9966);  *//* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
-    display: inline-block;
-    padding: 5px;
-}
-
-.testimony__arrow{
-    width: 90%;
-    cursor: pointer;
-}
-/* SOLUCIONES 2 */
+  }
+  .slider-card {
+    background: #fff;
+    padding: 0px 0px;
+    margin: 50px 15px 90px 15px;
+    border-radius: 5px;
+    box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+    transform: scale(0.9);
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
+  .slider-card img {
+    border-radius: 5px 5px 0px 0px;
+  }
+  .owl-nav .owl-prev {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0;
+    opacity: 1;
+    font-size: 30px !important;
+    z-index: 1;
+  }
+  .owl-nav .owl-next {
+    position: absolute;
+    top: calc(50% - 25px);
+    right: 0;
+    opacity: 1;
+    font-size: 30px !important;
+    z-index: 1;
+  }
+  .owl-dots {
+    text-align: center;
+  }
+  .owl-dots .owl-dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background: #ccc !important;
+    margin-left: 3px;
+    margin-right: 3px;
+    outline: none;
+  }
+  .owl-dots .owl-dot.active {
+    background: var(--color-secundary) !important;
+  }
+/* SLIDER CAROUSEL */
 
 
 /* Services */
@@ -446,7 +401,9 @@ header.abajo .navbar-brand, header.abajo ul li a{
 }
 
 @media (max-width:991px){
-
+    .title-inicio{
+        margin-top: 1.5rem!important;
+    }
     .hero{
         clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     }
@@ -475,7 +432,9 @@ header.abajo .navbar-brand, header.abajo ul li a{
 }
 
 @media (max-width:474px){
-
+    .title-inicio{
+        margin-top: 1.5rem!important;
+    }
     .hero{
         clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     }
