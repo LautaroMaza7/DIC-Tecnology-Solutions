@@ -434,6 +434,7 @@ header.abajo .navbar-brand, header.abajo ul li a{
 @media (max-width:474px){
     .logo-footer{
         width: 100px;
+        margin-bottom: 10px;
     }
     .title-inicio{
         margin-top: 1.5rem!important;

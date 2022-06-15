@@ -258,5 +258,6 @@ img {
 @media (max-width:474px){
     .logo-footer{
         width: 100px;
+        margin-bottom: 10px;
     }
 }
